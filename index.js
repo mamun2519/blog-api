@@ -15,7 +15,7 @@ app.get("/health", (_req, res) => {
 });
 
 app.get("api/v1/articles", (req, res) => {
-  res.status(200).json({ path: "/articles" });
+  res.status(200).json({ path: "/articles", method: "get" });
 });
 app.listen(4000, () => {
   console.log("server is listerningon port 4000");
